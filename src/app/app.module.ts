@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { routing } from './app.routing';
+import { CreatelogComponent } from './createlog/createlog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    CreatelogComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Meal } from '../meal.model';
+import { CreatelogComponent } from '../createlog/createlog.component';
 
 @Component({
   selector: 'app-index',
