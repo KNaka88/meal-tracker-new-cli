@@ -10,6 +10,8 @@ import { CreatelogComponent } from './createlog/createlog.component';
 import { MealListComponent } from './meal-list/meal-list.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { CaloriesFilterPipe } from './calories-filter.pipe';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { CaloriesFilterPipe } from './calories-filter.pipe';
     CreatelogComponent,
     MealListComponent,
     EditMealComponent,
-    CaloriesFilterPipe
+    CaloriesFilterPipe,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
