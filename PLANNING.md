@@ -5,11 +5,11 @@
   * bootstrap
 
 2. Specs
-  |Behavior|Input|Output|
-  |--------|-----|------|
-  | Create Meal Log| Name, Detail, Calories  | show on the page |
-  | Edit Meal Log   | Name, Detail, Calories  | change the existing log|
-  | Filter by Calories | Choose (All, More than 500, Less than 500) | the result page changes based on the filter |
+|Behavior|Input|Output|
+|--------|-----|------|
+| Create Meal Log| Name, Detail, Calories  | show on the page |
+| Edit Meal Log   | Name, Detail, Calories  | change the existing log|
+| Filter by Calories | Choose (All, More than 500, Less than 500) | the result page changes based on the filter |
 
 3. Integration
 
