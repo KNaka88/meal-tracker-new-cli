@@ -25,7 +25,7 @@
   * meal class (name, detail, calories)
 
   Pipe
-  * Filter by Calories
+  * calories-filter
 
 4. UX/UI
   * Include and modify bootstrap/materialize/Sass etc.

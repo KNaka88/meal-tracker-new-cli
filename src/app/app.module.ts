@@ -9,6 +9,7 @@ import { routing } from './app.routing';
 import { CreatelogComponent } from './createlog/createlog.component';
 import { MealListComponent } from './meal-list/meal-list.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
+import { CaloriesFilterPipe } from './calories-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EditMealComponent } from './edit-meal/edit-meal.component';
     IndexComponent,
     CreatelogComponent,
     MealListComponent,
-    EditMealComponent
+    EditMealComponent,
+    CaloriesFilterPipe
   ],
   imports: [
     BrowserModule,

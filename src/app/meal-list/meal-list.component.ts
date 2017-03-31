@@ -10,8 +10,15 @@ import { IndexComponent } from '../index/index.component';
 export class MealListComponent {
   @Input() childMeals: Meal[];
   @Output() clickSender = new EventEmitter();
+  filterName: String = "allMeals"; //default
 
   editLog(meal: Meal){
     this.clickSender.emit(meal);
   }
+
+  onChange(filterName){
+    this.filterName = filterName;
+    console.log(this.filterName);
+  }
+
 }
