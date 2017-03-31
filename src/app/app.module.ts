@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { routing } from './app.routing';
 import { CreatelogComponent } from './createlog/createlog.component';
+import { MealListComponent } from './meal-list/meal-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    CreatelogComponent
+    CreatelogComponent,
+    MealListComponent
   ],
   imports: [
     BrowserModule,
