@@ -17,12 +17,12 @@ export class IndexComponent {
 
   masterMeals: Meal[] = [
     new Meal("Cream Pasta", "for lunch", 300),
-    new Meal("Chocolate Cake", "for dinner", 450)
+    new Meal("Chocolate Cake", "for dinner", 450),
+    new Meal("Cheff's Special Pizza", "Party", 1300)
   ];
 
   addMeal(newMeal: Meal){
     this.masterMeals.push(newMeal);
-    console.log(this.masterMeals);
   }
 
 }

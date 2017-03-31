@@ -2,3 +2,7 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+table {
+   width: 100%;
+}
