@@ -11,7 +11,6 @@ import { MealListComponent } from './meal-list/meal-list.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { CaloriesFilterPipe } from './calories-filter.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { ModalComponent } from './modal/modal.component';
     CreatelogComponent,
     MealListComponent,
     EditMealComponent,
-    CaloriesFilterPipe,
-    ModalComponent
+    CaloriesFilterPipe
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,33 @@
-<h3>Create New Log</h3>
+<template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Create New Log</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class='form-group'>
+      <label for='newName'>Food Name</label>
+      <input id='newName' class='form-control' #newName>
+    </div>
+    <div class='form-group'>
+      <label>Detail</label>
+      <input #newDetail class='form-control'>
+    </div>
+    <div class='form-group'>
+      <label>Food Calories</label>
+      <input type="number" #newCalories class='form-control'>
+    </div>
 
-<div class='form-group'>
-  <label for='newName'>Food Name</label>
-  <input id='newName' class='form-control' #newName>
-</div>
-<div class='form-group'>
-  <label>Detail</label>
-  <input #newDetail class='form-control'>
-</div>
-<div class='form-group'>
-  <label>Food Calories</label>
-  <input type="number" #newCalories class='form-control'>
-</div>
-<button (click)="submitForm(newName.value, newDetail.value, newCalories.value);"      class='btn'>Create Log</button>
+  </div>
+  <div class="modal-footer">
+    <button (click)="submitForm(newName.value, newDetail.value, newCalories.value);" class='btn btn-success btn-outline-success' (click)="c('Close click')">Create Log</button>
+    <button type="button" class="btn btn-outline-info" (click)="c('Close click')">Close</button>
+  </div>
+</template>
+
+<button class="btn btn-success btn-lg btn-outline-primary" (click)="open(content)">Create Log</button>
+
+<hr>
+
+<pre>{{closeResult}}</pre>
