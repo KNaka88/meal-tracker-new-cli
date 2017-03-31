@@ -32,7 +32,6 @@ You will need the following things properly installed on your computer.
 * `cd meal-tracker`
 * `npm install`
 * `bower install`
-* `npm install --save @ng-bootstrap/ng-bootstrap`
 * `ng s` to start a dev server. Navigate to `http://localhost:4200/`.
 
 
