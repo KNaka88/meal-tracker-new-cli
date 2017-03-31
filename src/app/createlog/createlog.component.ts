@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Meal } from '../meal.model';
 
 @Component({
@@ -7,5 +7,11 @@ import { Meal } from '../meal.model';
   styleUrls: ['./createlog.component.css']
 })
 export class CreatelogComponent {
+  @Output() newMealSender = new EventEmitter();
+
+  submitForm(name: string, detail: string, calories: number){
+    var newMeal: Meal = new Meal(name, detail, calories);
+    this.newMealSender.emit(newMeal);
+    }
 
 }
