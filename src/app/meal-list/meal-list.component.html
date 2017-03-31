@@ -5,14 +5,16 @@
         <th>Food</th>
         <th>Calories</th>
         <th>Detail</th>
+        <th>Edit</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let meal of childMeals; let i = index;">
-        <th scope='row'>{{i}}</th>
+        <th scope='row'>{{i+1}}</th>
         <td>{{meal.name}}</td>
         <td>{{meal.calories}}</td>
         <td>{{meal.detail}}</td>
+        <td class='link' (click)="editLog(meal)">Edit This Log</td>
       </tr>
     </tbody>
   </table>

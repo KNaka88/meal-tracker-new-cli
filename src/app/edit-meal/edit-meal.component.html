@@ -1,0 +1,17 @@
+<div *ngIf="childSelectedMeal">
+  <h2>Edit {{childSelectedMeal.name}}: </h2>
+
+  <div class='form-group'>
+    <label>Edit Food</label>
+    <input [(ngModel)]="childSelectedMeal.name" class='form-control'>
+  </div>
+  <div class='form-group'>
+    <label>Calories</label>
+    <input type="number" [(ngModel)]="childSelectedMeal.calories" class='form-control'>
+  </div>
+  <div class='form-group'>
+    <label>Detail</label>
+    <input [(ngModel)]="childSelectedMeal.detail" class='form-control'>
+  </div>
+  <button class='btn' (click)= "saveEdit()">Save</button>
+</div>

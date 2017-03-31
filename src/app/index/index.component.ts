@@ -11,6 +11,8 @@ import { CreatelogComponent } from '../createlog/createlog.component';
 export class IndexComponent {
   @Input() newMealSender: Meal;
 
+  selectedMeal: Meal = null;
+
   masterMeals: Meal[] = [
     new Meal("Cream Pasta", "for lunch", 300),
     new Meal("Chocolate Cake", "for dinner", 450)
@@ -21,4 +23,11 @@ export class IndexComponent {
     console.log(this.masterMeals);
   }
 
+  editMeal(clickedMeal){
+    this.selectedMeal = clickedMeal;
+  }
+
+  finishedEditing(){
+    this.selectedMeal = null;
+  }
 }
