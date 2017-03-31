@@ -12,13 +12,14 @@ export class MealListComponent {
   @Output() clickSender = new EventEmitter();
   filterName: String = "allMeals"; //default
 
+  selectedMeal: Meal = null;
+
   editLog(meal: Meal){
-    this.clickSender.emit(meal);
+    this.selectedMeal = meal;
   }
 
   onChange(filterName){
     this.filterName = filterName;
-    console.log(this.filterName);
   }
 
 }

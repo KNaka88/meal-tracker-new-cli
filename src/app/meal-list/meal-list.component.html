@@ -22,7 +22,7 @@
         <td>{{meal.name}}</td>
         <td>{{meal.calories}}</td>
         <td>{{meal.detail}}</td>
-        <td class='link' (click)="editLog(meal)">Edit This Log</td>
+        <td class='link' (click)="editLog(meal)"><edit-meal [selectedMeal]='selectedMeal'></edit-meal></td>
       </tr>
     </tbody>
   </table>

@@ -1,17 +1,32 @@
-<div *ngIf="childSelectedMeal">
-  <h2>Edit {{childSelectedMeal.name}}: </h2>
+<template #content let-c="close" let-d="dismiss">
+  <div *ngIf="selectedMeal">
+    <div class="modal-header">
+      <h4 class="modal-title">Edit {{selectedMeal.name}}:</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class='form-group'>
+        <label>Edit Food</label>
+        <input [(ngModel)]="selectedMeal.name" class='form-control'>
+      </div>
+      <div class='form-group'>
+        <label>Calories</label>
+        <input type="number" [(ngModel)]="selectedMeal.calories" class='form-control'>
+      </div>
+      <div class='form-group'>
+        <label>Detail</label>
+        <input [(ngModel)]="selectedMeal.detail" class='form-control'>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button (click)= "saveEdit()" class='btn btn-success btn-outline-success' (click)="c('Close click')">Save</button>
+      <button type="button" class="btn btn-outline-info" (click)="c('Close click')">Close</button>
+    </div>
+  </div>
+</template>
 
-  <div class='form-group'>
-    <label>Edit Food</label>
-    <input [(ngModel)]="childSelectedMeal.name" class='form-control'>
-  </div>
-  <div class='form-group'>
-    <label>Calories</label>
-    <input type="number" [(ngModel)]="childSelectedMeal.calories" class='form-control'>
-  </div>
-  <div class='form-group'>
-    <label>Detail</label>
-    <input [(ngModel)]="childSelectedMeal.detail" class='form-control'>
-  </div>
-  <button class='btn' (click)= "saveEdit()">Save</button>
-</div>
+<span (click)="open(content)">Edit</span>
+
+<pre>{{closeResult}}</pre>

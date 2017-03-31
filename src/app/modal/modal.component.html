@@ -18,15 +18,16 @@
       <label>Food Calories</label>
       <input type="number" #newCalories class='form-control'>
     </div>
+    <button (click)="submitForm(newName.value, newDetail.value, newCalories.value);"      class='btn'>Create Log</button>
 
   </div>
   <div class="modal-footer">
-    <button (click)="submitForm(newName.value, newDetail.value, newCalories.value);" class='btn btn-success btn-outline-success' (click)="c('Close click')">Create Log</button>
-    <button type="button" class="btn btn-outline-info" (click)="c('Close click')">Close</button>
+    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
   </div>
 </template>
 
-<button class="btn btn-success btn-lg btn-outline-primary" (click)="open(content)">Create Log</button>
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+
 <hr>
 
 <pre>{{closeResult}}</pre>

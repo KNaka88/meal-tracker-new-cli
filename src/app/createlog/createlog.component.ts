@@ -16,15 +16,14 @@ export class CreatelogComponent {
     this.newMealSender.emit(newMeal);
     }
 
+  //Modal
   closeResult: string;
-
   constructor(private modalService: NgbModal) {}
-
   open(content) {
     this.modalService.open(content).result.then((result) => {
       this.closeResult = ``;
       }, (reason) => {
-        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+        this.closeResult = ``;
       });
     }
 
@@ -37,4 +36,5 @@ export class CreatelogComponent {
       return  `with: ${reason}`;
     }
   }
+  //Modal End
 }

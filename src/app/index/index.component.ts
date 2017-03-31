@@ -13,7 +13,7 @@ import { JsonpModule } from '@angular/http';
 export class IndexComponent {
   @Input() newMealSender: Meal;
 
-  selectedMeal: Meal = null;
+
 
   masterMeals: Meal[] = [
     new Meal("Cream Pasta", "for lunch", 300),
@@ -25,11 +25,4 @@ export class IndexComponent {
     console.log(this.masterMeals);
   }
 
-  editMeal(clickedMeal){
-    this.selectedMeal = clickedMeal;
-  }
-
-  finishedEditing(){
-    this.selectedMeal = null;
-  }
 }
