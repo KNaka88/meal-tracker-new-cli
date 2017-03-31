@@ -32,6 +32,7 @@ You will need the following things properly installed on your computer.
 * `cd meal-tracker`
 * `npm install`
 * `bower install`
+* `npm install --save @ng-bootstrap/ng-bootstrap`
 * `ng s` to start a dev server. Navigate to `http://localhost:4200/`.
 
 
@@ -45,6 +46,43 @@ You will need the following things properly installed on your computer.
   * Node.js
   * npm
   * bower
+
+  ## Planning
+
+  1. Configuration/dependencies
+    * angular CLI
+    * bootstrap
+
+  2. Specs
+
+  |Behavior|Input|Output|
+  |--------|-----|------|
+  | Create Meal Log| Name, Detail, Calories  | show on the page |
+  | Edit Meal Log   | Name, Detail, Calories  | change the existing log|
+  | Filter by Calories | Choose (All, More than 500, Less than 500) | the result page changes based on the filter |
+
+  3. Integration
+
+    Component
+    * app (template page)
+
+    * index
+        -- meal-list component
+        -- createlog component
+        -- editlog component
+
+    Model
+    * meal class (name, detail, calories)
+
+    Pipe
+    * calories-filter
+
+  4. UX/UI
+    * Include and modify bootstrap/materialize/Sass etc.
+    * Develop custom style
+
+  5. Extra
+    * firebase
 
 ##### This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
