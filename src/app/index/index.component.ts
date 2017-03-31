@@ -7,6 +7,7 @@ import { CreatelogComponent } from '../createlog/createlog.component';
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.css']
 })
+
 export class IndexComponent {
   @Input() newMealSender: Meal;
 

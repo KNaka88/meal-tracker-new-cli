@@ -1,3 +1,18 @@
-<div *ngFor='let meal of childMeals'>
-  <p>{{meal.name}}</p>
-</div>
+  <table class='table table-striped table-hover table-responsive'>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Food</th>
+        <th>Calories</th>
+        <th>Detail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let meal of childMeals; let i = index;">
+        <th scope='row'>{{i}}</th>
+        <td>{{meal.name}}</td>
+        <td>{{meal.calories}}</td>
+        <td>{{meal.detail}}</td>
+      </tr>
+    </tbody>
+  </table>
