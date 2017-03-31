@@ -3,8 +3,6 @@ import { Meal } from '../meal.model';
 import { CreatelogComponent } from '../createlog/createlog.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JsonpModule } from '@angular/http';
-import { ModalComponent } from '../modal/modal.component';
-// import { AppModule } from '../app.module';
 
 @Component({
   selector: 'app-index',
