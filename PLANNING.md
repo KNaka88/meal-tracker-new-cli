@@ -5,6 +5,7 @@
   * bootstrap
 
 2. Specs
+
 |Behavior|Input|Output|
 |--------|-----|------|
 | Create Meal Log| Name, Detail, Calories  | show on the page |

@@ -1,0 +1,14 @@
+{ "meals": [{
+    "name": "Pulse",
+    "detail": "Pink Floyd",
+    "calories": 300
+    }, {
+      "name": "Pulse",
+      "detail": "Pink Floyd",
+      "calories": 300
+    }, {
+      "name": "Pulse",
+      "detail": "Pink Floyd",
+      "calories": 300
+  }]
+}
