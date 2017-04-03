@@ -25,6 +25,7 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Bower](https://bower.io/)
+* [Angular CLI](https://cli.angular.io/)
 
 
 ## Installation
