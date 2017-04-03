@@ -11,9 +11,9 @@ import { MealListComponent } from './meal-list/meal-list.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { CaloriesFilterPipe } from './calories-filter.pipe';
 
+
 //Modal Bootstrap
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 //Firebase
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';

@@ -1,14 +1,14 @@
 { "meals": [{
-    "name": "Pulse",
-    "detail": "Pink Floyd",
-    "calories": 300
+    "name": "Chocolate Cake",
+    "detail": "By Cozy Corner",
+    "calories": 420
     }, {
-      "name": "Pulse",
-      "detail": "Pink Floyd",
-      "calories": 300
+      "name": "Fat Pasta",
+      "detail": "Oily Great Tomato Sauce Pasta",
+      "calories": 1200
     }, {
-      "name": "Pulse",
-      "detail": "Pink Floyd",
-      "calories": 300
+      "name": "Chicken Omlet",
+      "detail": "Breakfast",
+      "calories": 660
   }]
 }

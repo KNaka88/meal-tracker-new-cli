@@ -5,6 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JsonpModule } from '@angular/http';
 import { MealService } from '../meal.service';
 import { Router } from '@angular/router';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-index',
@@ -15,21 +16,22 @@ import { Router } from '@angular/router';
 
 export class IndexComponent implements OnInit {
   @Input() newMealSender: Meal;
-  masterMeals: Meal[];
+  masterMeals: Meal[] = [];
 
   constructor(private router: Router, private mealService: MealService) {}
 
   ngOnInit(){
-    this.masterMeals = this.mealService.getMeals();
+    this.mealService.getMeals().subscribe(result => {
+      let mealArray: Meal[] = [];
+      result.forEach(function(meal) {
+        let newMeal = new Meal(meal.name, meal.detail, parseInt(meal.calories));
+        mealArray.push(newMeal);
+      });
+      this.masterMeals = mealArray;
+    });
   }
 
-  // masterMeals: Meal[] = [
-  //   new Meal("Cream Pasta", "for lunch", 300),
-  //   new Meal("Chocolate Cake", "for dinner", 450),
-  //   new Meal("Cheff's Special Pizza", "Party", 1300)
-  // ];
-
-  addMeal(newMeal: Meal){
+  addMeal(newMeal){
     this.masterMeals.push(newMeal);
   }
 
