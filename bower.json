@@ -6,7 +6,7 @@
     "Koji Nakagawa <lightupthesky0627@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/KNaka88/meal-tracker",
   "ignore": [
     "**/.*",
     "node_modules",
